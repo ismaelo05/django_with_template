@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {% block body_block %}
+    <h1>Welcome To Index</h1>
+    <h2>This is an example of template inheritance!</h2>
+    <h1>{{ text | upper }}</h1> <!-- Met le contenu de la var text en majuscule -->
+    <h1>{{ text | cut:'world' }}</h1> <!-- cut the word hello from text content variable -->
+    <!-- Ajoute 99 au contenu de la viariable number -->
+    <h1>{{ number | add:"99"}}</h1>
+    {% endblock %}
